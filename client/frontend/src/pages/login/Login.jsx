@@ -3,7 +3,6 @@ import React from "react";
 import "./login.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-// Correct way to import and use an image:
 import inst1Logo from "../../assets/inst.svg";
 
 export function Login() {
@@ -31,13 +30,13 @@ export function Login() {
               className="mb-3"
               controlId="formBasicCheckbox"
             >
-              <span id="esqsenha" className="negrito">Esqueci minha senha</span>
+              <span id="esqsenha" className="negrito clicavel">Esqueci minha senha</span>
             </Form.Group>
             <Button id="bt1" variant="primary" type="submit">
               Entrar
             </Button>
           </Form>
-          <div id="final"><span>Não tem conta?</span><span id='cadastro' className="negrito"> Cadastre-se</span></div>
+          <div id="final"><span>Não tem conta?</span><span id='cadastro' className="negrito clicavel" > Cadastre-se</span></div>
         </div>
     </div>
   );

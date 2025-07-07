@@ -40,3 +40,6 @@
 #cadastro{
     color:  #2f9e40  ;
 }
+.clicavel:hover{
+    cursor: pointer;
+}
