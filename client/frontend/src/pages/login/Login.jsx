@@ -37,11 +37,11 @@ export function Login() {
               Entrar
             </Button>
           </Form>
+          <div id="final"><span>Não tem conta?</span><span id='cadastro' className="negrito"> Cadastre-se</span></div>
         </div>
     </div>
   );
 }
-
 export default Login;
 
 function handleLogin() {
