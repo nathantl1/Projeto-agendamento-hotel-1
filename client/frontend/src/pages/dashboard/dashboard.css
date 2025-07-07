@@ -1,0 +1,39 @@
+.custom-card {
+  flex-wrap: wrap;
+  background-color: #e5e6e8;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 15px; /* Espaço entre os cards */
+  padding: 15px 20px;
+  display: flex; /* Para alinhar o conteúdo e o ícone */
+  justify-content: space-between; /* Empurra o ícone para a direita */
+  align-items: center; /* Centraliza verticalmente o conteúdo */
+  cursor: pointer; /* Indica que é clicável */
+  transition: transform 0.2s ease-in-out; /* Animação ao passar o mouse */
+}
+
+.custom-card:hover {
+  transform: translateY(-3px); /* Levanta um pouco o card ao passar o mouse */
+}
+
+.card-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-subtitle {
+  color: #666;
+  font-size: 0.9em;
+}
+
+.card-icon i {
+  font-size: 24px;
+  color: #888;
+}
+.cards{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
