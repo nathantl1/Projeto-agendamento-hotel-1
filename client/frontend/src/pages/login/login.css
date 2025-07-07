@@ -1,0 +1,39 @@
+.login img{ 
+    width: 220px;
+
+}
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.borderxx{
+  border: 2px solid;
+  border-color: blue;
+}
+#esqsenha{
+    display: flex;
+    justify-content:end ;
+    color: #2f9e40;
+}
+#bt1 {
+    width: 400px;
+}
+.container-lg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+#bt1{
+    background-color: #2f9e40;
+}
+.negrito {
+  font-weight: bold;
+}
