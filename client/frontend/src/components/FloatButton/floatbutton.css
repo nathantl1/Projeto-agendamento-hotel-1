@@ -1,0 +1,20 @@
+.botao {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2f9e40;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #2f9e40;
+  box-shadow: 0 8px 16px #2f9e40;
+}

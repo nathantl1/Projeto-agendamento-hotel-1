@@ -1,6 +1,62 @@
-.navbar img{
-    width: 30px;
+.header-container {
+  padding-bottom: 1rem;
 }
-.bg-body-tertiary{
-    border-radius: 20px;
+
+.main-navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: transparent !important; 
+}
+
+.navbar-logo {
+  height: 40px; 
+}
+
+.user-icon {
+  height: 40px; 
+}
+
+.filter-buttons-container {
+  display: flex;
+  gap: 0.75rem; 
+  overflow-x: auto; 
+  padding-bottom: 0.5rem;
+}
+
+
+.filter-buttons-container::-webkit-scrollbar {
+  display: none;
+}
+.filter-buttons-container {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+}
+
+.filter-button {
+  border-radius: 20px; 
+  border: none;
+  font-weight: 500;
+  padding: 0.4rem 1.2rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+
+.filter-button {
+  background-color: #e9ecef; 
+  color: #495057;
+}
+
+
+.filter-button.active {
+  background-color: #28a745; 
+  color: white;
+}
+
+
+.filter-button:focus {
+  box-shadow: none;
+}
+
+#btnfiltro {
+    background-color: #28a745;
 }

@@ -1,0 +1,84 @@
+.custom-modal .modal-content {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 1rem;
+}
+
+.custom-modal .modal-header {
+  border-bottom: none;
+  padding: 1rem 1rem 0 1rem;
+}
+
+.custom-modal .modal-body {
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+
+.custom-modal .modal-footer {
+  border-top: none;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.input-group-custom {
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-group-custom:focus-within {
+  border-color: #86b7fe;
+}
+
+.input-group-custom i {
+  font-size: 1.2rem;
+  color: #6c757d;
+  margin-right: 0.75rem;
+}
+
+.input-group-custom .form-control,
+.input-group-custom .form-select {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+  padding-left: 0;
+}
+
+.btn-agendar {
+  background-color: #28a745;
+  border-color: #28a745;
+  font-weight: bold;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.btn-agendar:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+
+.date-time-field {
+  background-color: #e9ecef;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.date-time-field input {
+  background: transparent;
+  border: none;
+  color: #495057;
+  font-weight: 500;
+}
+
+.date-time-field input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.datain {
+  font-weight: bold;
+  color: #2f9e40;
+  padding-right: 10px;
+}

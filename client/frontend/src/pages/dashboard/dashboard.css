@@ -1,39 +1,83 @@
-.custom-card {
-  flex-wrap: wrap;
-  background-color: #e5e6e8;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  margin-bottom: 15px; /* Espaço entre os cards */
-  padding: 15px 20px;
-  display: flex; /* Para alinhar o conteúdo e o ícone */
-  justify-content: space-between; /* Empurra o ícone para a direita */
-  align-items: center; /* Centraliza verticalmente o conteúdo */
-  cursor: pointer; /* Indica que é clicável */
-  transition: transform 0.2s ease-in-out; /* Animação ao passar o mouse */
+.dashboard-container {
+  padding-top: 1rem;
 }
 
-.custom-card:hover {
-  transform: translateY(-3px); /* Levanta um pouco o card ao passar o mouse */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
 }
 
-.card-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #333;
+.reserva-card {
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
 }
 
-.card-subtitle {
-  color: #666;
-  font-size: 0.9em;
+.reserva-card-header {
+  padding: 1rem 1.25rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
 }
 
-.card-icon i {
-  font-size: 24px;
-  color: #888;
+.reserva-card-header h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #212529;
 }
-.cards{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
 
+.reserva-card-body {
+  padding: 1.25rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-wrapper {
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 0.85rem;
+  font-size: 0.95rem;
+}
+
+.info-item:last-child {
+  margin-bottom: 0;
+}
+
+.info-item span {
+  line-height: 1.5;
+}
+
+.card-actions {
+  margin-top: 1rem;
+  align-self: flex-end;
+  display: flex;
+  gap: 0.75rem;
+}
+
+.action-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: opacity 0.2s;
+}
+
+.action-btn:hover {
+  opacity: 0.7;
+}
+
+.action-icon {
+  width: 24px;
+  height: 24px;
 }
