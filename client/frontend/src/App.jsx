@@ -13,13 +13,11 @@ function App() {
   const [modalVisible, setModalVisible] = useState(false);
   const [refreshKey, setRefreshKey] = useState(0);
 
-  // 1. O estado do filtro agora vive aqui, no componente pai.
   const [filtroAtivo, setFiltroAtivo] = useState("Tudo");
 
-  // Esta função é chamada pelo modal quando uma reserva é criada com sucesso
   const handleReservationSuccess = () => {
     setModalVisible(false);
-    // Altera a 'key' da Dashboard para forçá-la a recarregar os dados
+
     setRefreshKey((oldKey) => oldKey + 1);
   };
 
@@ -32,10 +30,8 @@ function App() {
           path="/dashboard"
           element={
             <div className="container-lg position-relative">
-              {/* 2. O Header recebe a função para ATUALIZAR o filtro */}
               <Header onFilterChange={setFiltroAtivo} />
 
-              {/* 3. A Dashboard recebe o filtro ATIVO para exibir os cards corretos */}
               <Dashboard filtroAtivo={filtroAtivo} key={refreshKey} />
 
               <SchedulerModal
@@ -47,7 +43,7 @@ function App() {
             </div>
           }
         />
-        {/* Mantive a rota /agendar, caso seja usada no futuro */}
+
         <Route path="/agendar" element={<div>Página de Agendamento</div>} />
       </Routes>
     </BrowserRouter>
